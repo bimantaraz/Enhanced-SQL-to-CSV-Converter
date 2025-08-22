@@ -96,7 +96,7 @@ python teraz_sql.py sample_dump.sql -d
 ```
 
 ### Output CSV Format
-**sample_dump.csv**
+**example.com.csv**
 ```csv
 table_name,id,name,email,created_at,order_id,user_id,total,order_date,product_id,price,category
 users,1,John Doe,john@email.com,2023-01-15,,,,,,,,
@@ -132,7 +132,7 @@ python teraz_sql.py sample_dump.sql --analyze-only
 ✅ Format confirmed: MYSQL
 📋 Header untuk tabel 'users': 51 kolom
 ✅ Conversion completed!
-📈 Total data rows written: 3,044
+📈 Total data rows written: 2,126,328
 📄 Output file: example.com.csv
 📊 Output file size: 1,036,956 bytes
 
