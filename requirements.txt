@@ -1,0 +1,10 @@
+# Enhanced SQL to CSV Converter Requirements
+# This script uses Python standard library only
+# No external dependencies required
+
+# Optional: Ensure minimum Python version
+# python_requires>=3.6
+
+# For development/testing (optional)
+# pytest>=6.0.0
+# flake8>=3.8.0
