@@ -76,10 +76,9 @@ python teraz_sql.py sample_dump.sql -d
 ==================================================
 📂 Input file: example.com.sql
 📄 Output file: example.com.csv
-🔍 Debug mode: enabled
+==================================================
 
 🔍 Analyzing file structure...
-🔍 DEBUG: Found INSERT for table: users
 📊 File Analysis:
    📄 Total lines: 2,529
    🏗️  CREATE TABLE statements: 1
@@ -89,10 +88,14 @@ python teraz_sql.py sample_dump.sql -d
    ✅ Detected format: MYSQL
 
 🔄 Converting file: example.com.sql
-🔍 DEBUG: Found CREATE TABLE for: users
-🔍 DEBUG: Table users columns: ['users', 'email', 'encrypted_password']
-🔍 DEBUG: Found INSERT for table: users
 ✅ Format confirmed: MYSQL
+📋 Header untuk tabel 'users': 51 kolom
+✅ Conversion completed!
+📈 Total data rows written: 2,126,328
+📄 Output file: example.com.csv
+📊 Output file size: 1,036,956 bytes
+
+🎉 Success! Data converted to example.com.csv
 ```
 
 ### Output CSV Format
@@ -117,9 +120,10 @@ python teraz_sql.py sample_dump.sql --analyze-only
 ==================================================
 📂 Input file: example.com.sql
 📄 Output file: example.com.csv
-==================================================
+🔍 Debug mode: enabled
 
 🔍 Analyzing file structure...
+🔍 DEBUG: Found INSERT for table: users
 📊 File Analysis:
    📄 Total lines: 2,529
    🏗️  CREATE TABLE statements: 1
@@ -129,12 +133,8 @@ python teraz_sql.py sample_dump.sql --analyze-only
    ✅ Detected format: MYSQL
 
 🔄 Converting file: example.com.sql
+🔍 DEBUG: Found CREATE TABLE for: users
+🔍 DEBUG: Table users columns: ['users', 'email', 'encrypted_password']
+🔍 DEBUG: Found INSERT for table: users
 ✅ Format confirmed: MYSQL
-📋 Header untuk tabel 'users': 51 kolom
-✅ Conversion completed!
-📈 Total data rows written: 2,126,328
-📄 Output file: example.com.csv
-📊 Output file size: 1,036,956 bytes
-
-🎉 Success! Data converted to example.com.csv
 ```
